@@ -1,0 +1,22 @@
+{{#each this}}
+<li class="movie">
+    <!-- <a class="movie-card-inner"> -->
+    <a href="">
+        <div class="movie-darkened">
+            <picture>
+                <img class="movie-image"
+                    src="{{posterUrlPreview}}"
+                    alt="">
+            </picture>
+            <div class="movie-info">
+                <p class="movie-title">{{nameEn}}</p>
+                {{#each genres}}
+                <p class="movie-category">{{genre}}</p>
+                {{/each}}
+                <div class="movie-average movie-average--green">{{rating}}</div>
+            </div>
+        </div>
+    </a>
+    <!-- </a> -->
+</li>
+{{/each}}

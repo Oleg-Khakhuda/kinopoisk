@@ -25,11 +25,21 @@ a {
   padding: 0;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1,
 h2,
 h3,
-p {
-  margin: 0;
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
@@ -43,6 +53,12 @@ html {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  width: 100%;
 }
 
 .container {
