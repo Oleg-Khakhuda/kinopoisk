@@ -1,18 +1,21 @@
 {{#each this}}
 <li class="movie">
     <!-- <a class="movie-card-inner"> -->
-    <a href="">
-        <div class="movie-darkened">
-            <picture>
-                <img class="movie-image"
-                    src="{{posterUrlPreview}}"
-                    alt="">
-            </picture>
+    <a class="movie-link" href="">
+        {{!-- <div class="overlay">
+            {{#each genres}}
+            <p class="movie-category">{{genre}}</p>
+            {{/each}} --}}
+        
+            <div class="movie-darkened">
+                <picture>
+                    <img class="movie-image"
+                        src="{{posterUrlPreview}}"
+                        alt="">
+                </picture>
+        {{!-- </div> --}}
             <div class="movie-info">
-                <p class="movie-title">{{nameEn}}</p>
-                {{#each genres}}
-                <p class="movie-category">{{genre}}</p>
-                {{/each}}
+                <p class="movie-title">{{nameRu}}</p>
                 <div class="movie-average movie-average--green">{{rating}}</div>
             </div>
         </div>
