@@ -10,13 +10,13 @@
             <div class="movie-darkened">
                 <picture>
                     <img class="movie-image"
-                        src="{{posterUrlPreview}}"
+                        src="https://image.tmdb.org/t/p/w500{{poster_path}}"
                         alt="">
                 </picture>
         {{!-- </div> --}}
             <div class="movie-info">
-                <p class="movie-title">{{nameRu}}</p>
-                <div class="movie-average movie-average--green">{{rating}}</div>
+                <p class="movie-title">{{original_title}}</p>
+                <div class="movie-average">{{vote_average}}</div>
             </div>
         </div>
     </a>
